@@ -36,11 +36,11 @@ crossScalaVersions := Seq("2.11.12", "2.12.4")
 
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked", "-language:reflectiveCalls")
 
-lazy val caravan = project in file("Caravan")
+// lazy val caravan = project in file("Caravan")
 
-lazy val jigsaw = (project in file("jigsaw")).dependsOn(caravan)
+// lazy val jigsaw = (project in file("jigsaw")).dependsOn(caravan)
 
-dependsOn(caravan, jigsaw)
+// dependsOn(caravan, jigsaw)
 
 
 // Provide a managed dependency on X if -DXVersion="" is supplied on the command line.
